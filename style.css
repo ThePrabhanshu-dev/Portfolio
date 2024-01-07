@@ -16,6 +16,11 @@
     --second-bg-color:#323946;
     --text-color:#fff;
     --main-color:#0ef;
+
+    /*===============new colors ================*/
+    --chng-fir-color:#1f79df ;
+
+
 }
 
 html{
@@ -31,6 +36,7 @@ section{
     min-height: 100vh;
     padding: 10rem 9% 2rem;
 }
+
 .header{
     position:fixed;
     top:0;
@@ -90,6 +96,56 @@ span{
 .home-img{
     width:35vw;
 }
+/*new changement color gradient changing */
+#cChangel{
+    background-color: transparent;
+    padding-top:12vh;
+    box-sizing: border-box;
+    float:left;
+
+}
+#set-icon{
+    color:red;
+    font-size: 4rem;
+    animation:rotate 1.4s linear infinite;
+}
+#set-icon-night{
+    font-size: 4rem;
+    Color:black;
+}
+.col-change{
+    position: fixed;
+    top:32vh;
+    right:-50px;
+    transition: all 2s;
+}
+.col-change:hover{
+    right:0;
+}
+.cChangebox{
+    height:30vh;
+    width:50px;
+    background-color: orange;
+    border-radius: 20px;
+    float: left;
+    text-align: center;
+}
+.color-changerdiv{
+    height:40px;
+    width:40px;
+    border-radius: 100%;
+    margin-top: 10px;
+    margin-left: 5px;
+    background-color: aqua;
+}
+.color-changerdiv:nth-child(1){
+    background-color: var(--chng-fir-color);
+}
+.color-changerdiv:nth-child(2){
+    background-color:#1f242d;
+}
+
+/*new changement color gradient ending changing */
 /*  new changement border  */
 #home-border{
     height:170%;
@@ -124,11 +180,11 @@ span{
     height: 150%;
     width:40%;
     background: repeating-conic-gradient(var(--main-color) 0%, red 5%,transparent 5%, transparent 40%, var(--main-color) 50% );
-    animation: rotate 2s ease infinite;
+    animation: rotate 2s linear infinite;
     
 }
 #home-border:hover:before{
-    animation: rotate2 0.7s ease infinite;
+    animation: rotate2 0.5s linear infinite;
 }
 #home-border:after{
     content:"";
@@ -138,6 +194,7 @@ span{
     background-color: var(--bg-color);
     inset:5px;
 }
+
 
 /*  new changement border finish */
 .home-img img{

@@ -64,7 +64,29 @@ const typed = new Typed('.multiple-text',{
     loop:true
 });
 
+/*===================changing color feature on setting option   ======*/
 
+let x = document.querySelectorAll(".color-changerdiv");
+x.forEach(function(btn){
+    btn.addEventListener("click",()=>{
+        if(btn.classList.contains('d1')){
+            document.documentElement.style.setProperty('--bg-color', '#1f79df');  
+            document.documentElement.style.setProperty('--second-bg-color', '#5030b9');
+            document.documentElement.style.setProperty('--main-color', '#db66f2');
+        }
+        else if(btn.classList.contains('d2')){
+            document.documentElement.style.setProperty('--bg-color', '#1f242d');  
+            document.documentElement.style.setProperty('--second-bg-color', '#323946');
+            document.documentElement.style.setProperty('--main-color', '#0ef');
+        }
+    })
+})
+
+document.querySelector("#set-icon-night").addEventListener("click",()=>{
+    document.documentElement.style.setProperty('--bg-color', '#37383b');
+    document.documentElement.style.setProperty('--second-bg-color', '#aaabad');
+    document.documentElement.style.setProperty('--main-color', '#0d0c0d');
+})
 
 
 
