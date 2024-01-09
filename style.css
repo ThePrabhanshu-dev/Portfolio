@@ -118,6 +118,7 @@ span{
     top:32vh;
     right:-50px;
     transition: all 2s;
+    z-index:99;
 }
 .col-change:hover{
     right:0;
